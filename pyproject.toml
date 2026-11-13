@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datareg"
+version = "1.0.0"
+description = "数据集发布登记台：可追溯、可复用、可回滚的本地发布登记（纯标准库）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "datareg" }]
+
+[project.scripts]
+datareg = "datareg.cli:main"
+
+[tool.setuptools]
+packages = ["datareg"]
